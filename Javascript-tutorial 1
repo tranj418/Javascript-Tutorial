@@ -1,0 +1,36 @@
+console.log('Hello World'); //Basic print statement
+
+console.log('I like PHO')
+
+window.alert('I really love pizza') //This will create a pop-up message on the web side
+
+
+/*
+This is a multi-line comement
+
+*/
+
+
+---------------------
+HTML
+---------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"> <!--This is for CSS stylesheet-->
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="index.js"></script> <!--This is the syntax to link a js file to your html-->
+
+
+
+
+
+</body>
+</html>
