@@ -1,0 +1,62 @@
+//Arithmetic expression
+/*
+    operands are values, variables, etc
+    operators are +, -, /, *
+    that can be evaluated to a value
+*/
+
+
+let students = 20;
+
+//students = students + 24;
+//students = students - 4;
+//students = students * 4;
+//students = students / 4;
+//students = students - 4;
+
+// Augmented operator - shortcut to writing the above
+// students += 1;
+// NO such %=
+
+/*order of operations 
+    Parentheses
+    exponents
+    multiplication and division
+    addition and subtraction
+*/
+
+let extrastudents = students % 6; // 20/4, IF there are any remainders
+console.log(extrastudents)
+
+
+
+console.log('You have', students, 'students')
+
+// assigning JS scripting to an id element in html
+document.getElementById('p1').innerHTML = 'Mrs. Wilson has ' + students + ' students'
+
+---------
+HTML
+---------
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <p id="p1"></p>
+    
+        <script src="index.js"></script>
+
+
+
+
+
+    </body>
+</html>
+
