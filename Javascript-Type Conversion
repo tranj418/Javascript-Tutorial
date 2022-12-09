@@ -1,0 +1,26 @@
+//Type conversion
+// changing data type of a value from one to another
+
+/*
+let age = window.prompt('Age');
+console.log(typeof age) // typeof is to show the data type
+
+age = Number(age) //type conversion
+age += 1;
+
+console.log('You are', age, 'yrs old')
+
+console.log(typeof age)
+*/
+
+let x;
+let y;
+let z;
+
+x = Number('3.14')
+y = String(3.14)
+z = Boolean('') //converting empty string to BOOL is false
+
+console.log(x, typeof x)
+console.log(y, typeof y)
+console.log(z, typeof z)
