@@ -17,6 +17,7 @@ let x;
 let y;
 let z;
 
+// If you try and convert a string into a number like 'PIZZA' you will get NaN - NOT A NUMBER
 x = Number('3.14')
 y = String(3.14)
 z = Boolean('') //converting empty string to BOOL is false
