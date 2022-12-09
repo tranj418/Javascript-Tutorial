@@ -1,0 +1,84 @@
+ //Program to find hypotenuse of right triangle
+// sq root of "A sq" and "B sq"
+let a;
+let b;
+let c;
+
+/* Short method with  NO HTML
+a = window.prompt('Enter the first number')
+a = Number(a)
+a = Math.pow(a, 2)
+
+b = window.prompt('Enter the second number')
+b = Number(b)
+b = Math.pow(b, 2)
+
+let c = Math.sqrt((a + b))
+
+console.log(hypotenuse)
+*/
+
+
+// With HTML
+// remember to start it with document.getelementbyID
+document.getElementById('sbutton').onclick = function(){
+
+    a = document.getElementById('num1').value;
+    a = Number(a);
+
+    b = document.getElementById('num2').value;
+    b = Number(b);
+
+    c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+    document.getElementById('cLabel').innerHTML = 'Side C: ' + c;
+} 
+
+
+-----------
+HTML
+-----------
+
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css"
+        href="style.css">
+
+
+
+    </head>
+
+    <body>
+
+        <!-- If your JS code has the following wording:
+        "Uncaught TypeError: Cannot set properties 
+        of null (setting 'onclick') at"
+        
+        MOVE your JS script source BELOW all the HTML elements
+        -->
+
+        <label id="alabel">Enter A</label>
+        <br>
+        <input type="text" id="num1">
+        <br><br>
+
+        <label id="blabel">Enter B</label>
+        <br>
+        <input type="text" id="num2">
+        <br><br>
+
+        <button type="submit" id="sbutton">Submit</button>
+
+        <br><br><br>
+        <label id="cLabel"></label>
+
+        <script src="index.js"></script>
+
+
+    </body>
+
+</html>
