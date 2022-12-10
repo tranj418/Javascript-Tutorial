@@ -1,0 +1,67 @@
+--------------
+JS
+--------------
+
+// Javascript counter program
+
+let count = 0;
+
+document.getElementById('decreaseBtn').onclick = function(){
+    count -= 1;
+    document.getElementById('countLabel').innerHTML = count;
+}
+
+document.getElementById('resetBtn').onclick = function(){
+    count = 0;
+    document.getElementById('countLabel').innerHTML = count;
+};
+
+document.getElementById('increaseBtn').onclick = function(){
+    count += 1;
+    document.getElementById('countLabel').innerHTML = count;
+};
+
+
+
+--------------
+HTML
+--------------
+
+<!DOCTYPE HTML>
+
+<html>
+    <HEAD>
+        <LINK rel="stylesheet" type="text/css" 
+        href="style.css">
+
+
+
+
+    </HEAD>
+
+    <BODY>
+
+
+        <label id="countLabel">0</label>
+        <button id="decreaseBtn">Decrease</button>
+        <button id="increaseBtn">Increase</button>
+        <button id="resetBtn">Reset</button>
+
+
+
+        <script src="index.js"></script>
+
+    </BODY>
+
+</html>
+
+
+----------
+CSS
+----------
+
+#countLabel{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+}
