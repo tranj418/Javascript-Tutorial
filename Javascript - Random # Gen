@@ -1,0 +1,73 @@
+-------------
+JS
+-------------
+// Random number generator
+
+//let x = Math.random();// will include decimal numbers
+
+//let x = Math.floor(Math.random() * 7); 
+// to set a range of up to 5, not including 6, to include the end digit add 1 to the end of the 6
+//let y = Math.floor(Math.random() * 7); 
+//let z = Math.floor(Math.random() * 7); 
+
+
+//For the JS/HTML function below
+let x;
+let y;
+let z;
+
+
+//console.log(x) // will generate decimal numbers as well, unless you utilize the rounding function
+//console.log(y)
+//console.log(z)
+
+document.getElementById('rollBtn').onclick = function(){
+
+    let x = Math.floor(Math.random() * 7); 
+    let y = Math.floor(Math.random() * 7); 
+    let z = Math.floor(Math.random() * 7); 
+
+    document.getElementById('num1').innerHTML = x;
+    document.getElementById('num2').innerHTML = y;
+    document.getElementById('num3').innerHTML = z;
+};
+
+
+
+-------------
+HTML
+-------------
+<!DOCTYPE HTML>
+
+<html>
+    <HEAD>
+        <LINK rel="stylesheet" type="text/css" 
+        href="style.css">
+
+
+
+
+    </HEAD>
+
+    <BODY>
+
+
+        <label>Random Number: </label>
+        <label id="num1"></label>
+        <br><br>
+
+        <label>Random Number: </label>
+        <label id="num2">Number 2: </label>
+        <br><br>
+
+        <label>Random Number: </label>
+        <label id="num3">Number 3: </label>
+        <br><br>
+
+        <button type="button" id="rollBtn">Roll</button>
+
+        <script src="index.js"></script>
+
+    </BODY>
+
+</html>
