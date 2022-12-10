@@ -1,0 +1,19 @@
+ // String slicing
+//The sliced section of a string will return it as a NEW string
+//The original string is not modified
+
+let fullName = 'Sanji Vinsmoke';
+let firstName;
+let lastName;
+
+//lastName = fullName.slice(5);//first arg is starting index, if NO second arg entered, then the program will go to end of string
+//console.log(lastName);
+
+//firstName = fullName.slice(0,5);//Will NOT include the item at the second index position, but everything UP TO that second index
+//console.log(firstName);
+
+firstName = fullName.slice(0, fullName.indexOf(" "));//Starts at 0 and goes up to the index location where there is a space in the string
+lastName = fullName.slice(fullName.indexOf(' ') + 1);//starts at the string index and includes 1 up until the end of the string
+
+console.log(firstName);
+console.log(lastName);
