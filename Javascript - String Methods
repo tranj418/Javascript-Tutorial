@@ -1,0 +1,30 @@
+//String properties & Methods
+
+let username = '   Jim   ';
+let phoneNum = '889-451-7781';
+
+len = username.length;//Gets the length of the string
+console.log(len);
+
+namechar = username.charAt(1);//Gets the value at the index position
+console.log(namechar);
+
+strIndexAt = username.indexOf('J');//returns the index position
+console.log(strIndexAt);
+
+strLastIndex = username.lastIndexOf('m');//returns the index position argument was last referenced in string
+console.log(strLastIndex);
+
+console.log(username);//PRE-white space trimmed
+strTrim = username.trim();//To trim leading and trailing whitespace
+console.log(strTrim);//Post white space trimmed
+
+capUsername = username.toUpperCase();//method turns the string to ALL caps
+console.log(capUsername);
+
+lowUserName = username.toLowerCase();
+console.log(lowUserName);
+
+console.log(phoneNum);
+replaceStr = phoneNum.replaceAll('-', '/');// Takes two arguments, first one is what it is searching for, the second argument is what the function will replace the first argument with
+console.log(replaceStr);
