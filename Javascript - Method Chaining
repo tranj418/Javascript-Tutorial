@@ -1,0 +1,11 @@
+ //Method chaining - calling one method after another
+// in one continuous line of code
+
+
+let userName = 'jim';
+
+//let letter = userName.charAt(0);//Grabs value at the specified index and assigns it to the variable
+//console.log(letter.toUpperCase());// takes the str value stored in the variable and converts it to uppercase
+
+let letter = userName.charAt(0).toUpperCase();//Method chaining
+console.log(letter);
