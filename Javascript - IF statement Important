@@ -1,0 +1,26 @@
+//IF/conditional statements
+
+
+let age = 21;
+
+//Set the condition in the parantheses
+//set the code in the curly braces to execute if code is TRUE
+/*
+if(age >= 18){
+    console.log('Hello World');
+}
+else if(age < 0){
+    console.log('You have not been born yet');
+}
+else{
+    console.log('You are underage');
+}*/
+
+let online = true;
+
+if(online){
+    console.log('This user is online')
+}
+else{
+    console.log('nothing')
+}
