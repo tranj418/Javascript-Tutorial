@@ -1,0 +1,70 @@
+------------
+JS
+------------
+
+document.getElementById('myBtn').onclick = function(){
+    const mycheckbox = document.getElementById('myCheckBox');
+    const myvisa = document.getElementById('visa');
+    const mydc = document.getElementById('dc');
+    const mypaypal = document.getElementById('paypal');
+
+
+    if(mycheckbox.checked){
+        console.log('You are subscribed');
+    }
+    else{
+        console.log('You are NOT subscribed');
+    }
+
+    if(myvisa.checked){
+        console.log('You are paying with a VISA');
+    }
+    else if(mydc.checked){
+        console.log('You are paying with a Discover card');
+    }
+    else if(mypaypal.checked){
+        console.log('You are paying with PayPal');
+    }
+    else{
+        window.alert('You have not selected a Payment Type');
+    }
+
+}
+
+---------
+HTML
+---------
+
+<!DOCTYPE EHTML>
+
+
+<HTML>
+
+    <HEAD>
+        <link rel="stylesheet" href="style.css">
+
+
+
+
+    </HEAD>
+
+
+    <BODY>
+        <label>Subscribe: &nbsp</label>
+        <input type="checkbox" id="myCheckBox">
+        <br><br>
+
+        <label>Payment Type</label>
+        <br>
+        <input type="radio" id="visa" name="payment">Visa
+        <input type="radio" id="dc" name="payment">Discover
+        <input type="radio" id="paypal" name='payment'>PayPal
+        <br><br>
+
+        <button type="submit" id="myBtn">Submit</button>
+
+
+        <script src="index.js"></script>
+    </BODY>
+
+</HTML>
