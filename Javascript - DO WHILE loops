@@ -1,0 +1,24 @@
+//DO WHILE loop = DOES something AND then checks the condition, repeats if condition is true
+
+
+let username;
+
+//This while LOOP will NOT do anything because the initialized variable has NO value
+//So the while loop assume is it FALSE
+/*
+while(username == ''){
+    username = window.prompt('Enter username');
+}
+*/
+
+
+//Do while loop syntax below
+//Executes the code in the {} first and then checks the condition
+
+do{
+    username = window.prompt('Enter username');
+}while(username == '')
+
+console.log('Hello', username)
+
+
