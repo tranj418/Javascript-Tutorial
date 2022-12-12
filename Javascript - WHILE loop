@@ -1,0 +1,12 @@
+//WHILE loop
+//Repeats code while condition is TRUE
+
+let username = '';
+
+//enter the condition in the empty string
+while(username == ''|| username == null){ //The NULL makes it so you CANNOT click CANCEL on the window prompt that appears
+    
+    username = window.prompt('Enter username')
+    //Condition is checked at the END of the WHILE LOOP
+}
+console.log('Hello!', username)
