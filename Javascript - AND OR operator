@@ -1,0 +1,21 @@
+//AND / OR operator
+// && - AND (Both conditions are TRUE)
+// || - OR (Either condition is TRUE)
+
+let temp = 10;;
+let state = 'IL';
+
+if(temp <= 10 && state == 'MI'){
+    console.log('BOTH conditions are met');
+}
+else{
+    console.log('Neither conditions are met');
+}
+
+if(temp >= 15 || state == 'MI'){
+    console.log('Atleast one condition is true');
+} 
+else{
+    console.log('Neither conditions are TRUE');
+}
+
