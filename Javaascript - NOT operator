@@ -1,0 +1,19 @@
+//NOT operator - "!"
+//reverses a condition's boolean value
+// true > false and false > true
+let sunny = false;
+let temp = 10;
+
+if(!(temp == 10)){// syntax is to wrap whatever condition is in the IF statement with a !()
+    console.log('It is NOT sunny outside');
+}
+else{
+    console.log('It is sunny outside');
+}
+
+if(!sunny){//or for BOOL values you can just put the ! in front of the var
+    console.log('It is NOT sunny outside');
+}
+else{
+    console.log('It is sunny outside');
+}
