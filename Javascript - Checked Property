@@ -9,7 +9,7 @@ document.getElementById('myBtn').onclick = function(){
     const mypaypal = document.getElementById('paypal');
 
 
-    if(mycheckbox.checked){
+    if(mycheckbox.checked){ //The checked property utilized with checkboxes and radio buttons checks to see if the element is 1 or 0
         console.log('You are subscribed');
     }
     else{
