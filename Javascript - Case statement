@@ -1,0 +1,36 @@
+//Switches, statement that examines a value for a match against many case clauses
+//an alternative to many "Else If" statements
+
+let grade = 'B';
+let num = 1;
+let firstname = 'Jam'
+
+switch(grade){
+    case"A"://Checking to see if case is EQUAL to A, the value of variable grade
+        console.log('You got an A in the class');
+        break;//Required at the end of each case statement
+    case"B":
+        console.log('You got a B in the class');
+        break;
+    case"C":
+        console.log('You got a C in the class');
+        break;
+    case"D":
+        console.log('You are barely passing');
+        break;
+    case"D":
+        console.log('You are barely passing');
+        break;
+    default:
+        console.log(grade, 'That is not a valid letter grade')
+    
+}
+
+
+
+if(num > 2 || firstname == 'Jim'){ //The OR operator for JS ||
+    console.log('Condition met')
+}
+else{
+    console.log('No condition met')
+}
