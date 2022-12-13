@@ -1,0 +1,20 @@
+//Break statement
+//Continue statement
+
+
+for(i = 20; i > 0; i -= 1){
+    if(i == 13){
+        console.log('Current integer is 13, stopping count')
+        break;//stops the loop once the condition is true
+    }
+    console.log(i)
+}
+
+
+for(i = 20; i > 0; i -= 1){
+    if(i == 13){
+        console.log('Current integer is 13, skipping over it')
+        continue;//Continues the loop and skips over 13
+    }
+    console.log(i)
+}
