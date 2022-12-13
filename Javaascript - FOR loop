@@ -1,0 +1,17 @@
+//For loops
+//Repeats some code for a CERTAIN amount of times
+
+
+//three things to INCLUDE in the condition of the FOR loop
+//1) Counter
+//2)Condition
+//3)Increment
+//The counter variable is a local variable INSIDE the for loop condition
+
+for(let i = 1; i <= 10; i += 1){
+    console.log(i);
+}
+
+for(let i = 10; i > 0; i -= 2){// changed it to i -= 2 so it counts down by two instead
+    console.log(i);
+}
