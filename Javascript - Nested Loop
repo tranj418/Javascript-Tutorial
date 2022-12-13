@@ -1,0 +1,23 @@
+//Nested loops
+
+/*
+for(let i = 1; i <= 3; i +=1){
+    for(let j = 1; j <= 3; j +=1){//will want another counter
+        console.log(j)// will print out 1-3 and that counts as the FIRST iteration, then prints out 1-3 for the SECOND iteration from the outer FOR loop
+    }
+}
+*/
+
+
+//Creating a rectangle, will require and HTML element
+let symbol = window.prompt('Enter a symbol to use')
+let rows = window.prompt('Enter a number of rows')
+let columns = window.prompt('Enter a number of columns')
+
+for(let i = 1; i <= rows; i +=1){
+    for(let j = 1; j <= columns; j +=1){//will want another counter
+        document.getElementById('myRectangle').innerHTML += symbol;// swapped 'j' with symbol variable so instead of numbers it shows a symbol 
+        
+    }
+    document.getElementById('myRectangle').innerHTML += '<br>';
+}
