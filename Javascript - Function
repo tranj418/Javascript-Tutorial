@@ -1,0 +1,28 @@
+//Functions
+
+
+
+function printtxt(){//syntax to create a function - function xyz(){}
+
+    let userName = 'Jim';
+    let firstName = 'J';
+    console.log('Hello World');
+    console.log('Hello World');
+    console.log('Hello World');
+
+    printName(userName, firstName)
+}
+
+printtxt();
+
+function printName(a, b){
+    console.log('Hello!', a)
+    console.log('Hello!', a)
+    console.log('Hello!', a)
+    console.log('Hello!', b)//Will throw an error since this is declared in the FIRST function
+    //Will get an error ReferenceError: VariableName is NOT defined at xyz function
+    //Only way to get through it is to specify an argument for the function
+    //printName(firstName)
+}
+
+printName();
