@@ -1,0 +1,39 @@
+//Ternary Operator
+//Alternative for the If/Else statement - takes 3 operands
+
+// 1) a condition with ?
+// 2) a condition with True
+// 4) a condition with False
+
+//Condition ? exprIfTrue: exprIfFalse
+
+let adult = (ageCheck(20));
+console.log(adult)
+
+/* Example 1
+function ageCheck(age){
+    if(age >= 18){
+        return true
+    }
+    else{
+        return false
+    }
+}
+*/
+
+
+function ageCheck(age){
+    
+    return age >= 18 ? true : false
+    //Condition ? expressionIfTrue : expressionIfFalse
+}
+
+
+
+checkWinner(false);
+
+function checkWinner(win){
+    //With a boolean variable check you do not need the return statement
+    win ? console.log('You win') : console.log('You lose')
+}
+
