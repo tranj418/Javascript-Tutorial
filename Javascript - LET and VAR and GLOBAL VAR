@@ -1,0 +1,48 @@
+// Variable scope
+
+// Let = variables are limited to block scope{}
+// Var = variables are LIMITED to a FUNCTION(){}
+
+
+//Global variable = is declared OUTSIDE any function
+//If global, VAR will change browser's window properties
+
+/*
+for(let i = 1; i <= 3; i+=1){//Any Var defined with LET does NOT exist outside of the block scope or the {}
+    console.log(i);
+}
+*/
+
+//WORKAROUND for the issue with LET
+/*
+for(var i = 1; i <= 3; i+=1){
+    console.log(i);
+}
+*/
+
+//Global Var - name 
+//let name = 'Jim';
+
+//doSomething()
+
+
+function doSomething(){
+    for(var i = 1; i <= 3; i+=1){//The Variable cannot escape the {} it is defined in
+        //console.log(i);// When trying call the var - i outside of the 
+    }
+}
+
+
+//console.log(i);// I is declared in the for loop, trying to access it OUTSIDE of the FOR loop throws an error
+// "var name" is NOT defined
+//Unless you declare the variable name with VAR, remember if used in a FUNCTION, then it does NOT exist outisde of it
+
+
+//If global, VAR will change browser's window properties
+//Type WINDOW into the browser console and then press "Enter"
+
+//var name ='Jim';
+//This will cause you to change the windows property of NAME from defaukt "" to JIM
+
+let name = 'Jim';
+//If you use LET then it will NOT cause the windows property of NAME 
