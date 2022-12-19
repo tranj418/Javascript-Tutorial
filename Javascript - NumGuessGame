@@ -1,0 +1,51 @@
+//Javascript
+
+//Num Guess Game
+
+const answer = Math.floor(Math.random() * 10 + 1);
+let guessAttempts = 0;
+
+
+document.getElementById('submitBtn').onclick = function(){
+    
+    let guess = document.getElementById('guessField').value;
+
+    if(guess == answer){
+        alert(`You guessed the right answer!
+        It took you ${guessAttempts} attempts`);
+    }
+    else if(guess > answer){
+        guessAttempts += 1;
+        alert('Guess to high, try again!')
+    }
+    else if(guess < answer){
+        guessAttempts += 1;
+        alert('Guess too low, try again!')
+    }
+}
+
+
+//HTML
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Number Guessing Game</title>
+
+
+    </head>
+    <body>
+        <h1>Number Guessing Game</h1>
+        <p>Pick a number between 1-10</p>
+        <label>Enter a guess</label>
+        <br><br>
+
+        <input type="text" id="guessField">
+        <button type="submit" id="submitBtn">Submit</button>
+        <br><br>
+
+
+        <script src="index.js"></script>
+    </body>
+</html>
