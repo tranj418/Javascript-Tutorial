@@ -1,0 +1,76 @@
+------------Javascript---------------
+//Temperature converter
+
+document.getElementById('submitBtn').onclick = function(){
+
+    let temp;
+
+    let celsiusSelection = document.getElementById('cbtn').checked;
+    let fahrenheitSelection = document.getElementById('fbtn').checked;
+   
+
+    if(celsiusSelection){
+        temp = document.getElementById('tempinput').value;
+        temp = Number(temp);
+        temp = toCelsius(temp);
+
+        document.getElementById('output').innerHTML = temp +`°C`
+    }
+
+    else if(fahrenheitSelection){
+        temp = document.getElementById('tempinput').value;
+        temp = Number(temp);
+        temp = toFarenheit(temp);
+
+        document.getElementById('output').innerHTML = temp +`°F`
+    }
+
+    else{
+        document.getElementById('output').innerHTML = 'Select a radio button';
+    }
+
+}
+
+
+function toFarenheit(temp){
+    return temp * 9 / 5 + 32;
+}
+
+
+function toCelsius(temp){
+    return(temp - 32) * (5 / 9);
+}
+
+
+
+
+------------html-------------
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+
+
+
+    </head>
+    <body>
+        <label id="header">Enter a temperature</label><br>
+        
+        <input type="text" id="tempinput"><br>
+        
+        <label id="body">Convert to:</label><br>
+
+        <input type="radio" id="cbtn" name="unit">
+        <label for="cbtn">Celcius</label><br>
+        <input type="radio" id="fbtn" name="unit">
+        <label for="fbtn">Farenheit</label><br><br>
+
+        <button type="submit" id="submitBtn">Submit</button><br><br>
+
+        <label id="output"></label>
+
+
+        <script src="index.js"></script>
+    </body>
+</html>
