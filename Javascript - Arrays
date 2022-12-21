@@ -1,0 +1,18 @@
+//Arrays 
+//Can store multiple values
+
+let things = ['fruit', 'car', 'chair'];
+
+things[0] = 'clothes';
+
+things.push('house');//To add an element at the end
+things.pop();//removes the LAST element
+things.unshift('sky');//Will add element to the beginning of array
+things.shift();//removes element from the BEGINNING of array
+
+let length = things.length;//Grabs length of array
+let index = things.indexOf('car');//If you search for something that does NOT exist you will receive -1 as OUTPUT
+
+console.log(things);
+console.log(length);
+console.log(index);
