@@ -1,0 +1,42 @@
+//2D arrays
+
+let carbs = ['rice', 'potatoes', 'pasta'];
+
+let proteins = ['chicken', 'eggs', 'beef'];
+
+let veggies = ['green beans', 'carrots', 'onions'];
+
+
+let groceryList = [carbs, proteins, veggies];
+
+
+//This will display each list SEPARATELY then each item in each list
+/*
+for(let list of groceryList){
+        console.log(list);
+}
+*/
+
+
+
+//To print out ALL the items of the combined list
+/*
+for(let list of groceryList){
+    for(let food of list){
+        console.log(food);
+    }
+}
+*/
+
+
+
+
+//changing a certain element in a 2D array
+
+groceryList[2][2] = 'fish';
+
+for(let list of groceryList){
+    for(let food of list){
+        console.log(food);
+    }
+}
