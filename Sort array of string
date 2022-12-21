@@ -1,0 +1,10 @@
+//sort array of strings
+
+let foods = ['pho', 'pizza', 'chicken', 'soda'];
+
+//foods = foods.sort();//sorts in alphabetical order
+foods = foods.sort().reverse(); //reverses list in alphabetical order
+
+for(let item of foods){
+    console.log(item);
+}
