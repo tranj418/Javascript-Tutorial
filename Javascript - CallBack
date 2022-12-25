@@ -1,0 +1,20 @@
+//callback a function passed as an argument to another function
+
+
+sum(2, 3, displayDOM);//Sum is the function and the third argument passed in was the function
+//Sum is first invoked, args passed in
+//the intial data is stored
+//callback is the third arg, which was the function displayDom
+
+function sum(x, y, callback){
+    let result = x + y;
+    callback(result);
+}
+
+function displayConsole(output){
+    console.log(output)
+}
+
+function displayDOM(output){
+    document.getElementById('test').innerHTML = output;
+}
