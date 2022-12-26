@@ -1,0 +1,15 @@
+//Array.filter() creates a new array with all elements
+//pass the test provided by a function
+
+let ages = [22, 21, 19, 20, 16, 18, 15, 17];
+
+let adults = ages.filter(checkage);
+adults.forEach(print);
+
+function checkage(element){
+    return element >= 18;//The test
+}
+
+function print(element){
+    console.log(element);
+}
