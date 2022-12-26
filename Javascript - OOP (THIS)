@@ -1,0 +1,36 @@
+//this (keyword) = refernce to a particular object
+// the object depends on the immediate context
+
+
+
+const car = {
+    model:'Camry',//Properties
+    color:'blue',
+    year:2023,
+
+    drive: function(){//Methods
+        //console.log(`You drive the ${model}.`)//Will receive an error xyz is NOT defined, property is NOT a variable
+        console.log(`You drive the ${this.model}.`)//NO error, the THIS keyword refers to the object currently being worked with
+        //Immediate context is the model    
+    },
+    brake: function(){
+        console.log('You have stopped the car')
+    }
+}
+
+const car2 = {
+    model:'Compass',//Properties
+    color:'White',
+    year:2024,
+
+    drive: function(){//Methods
+        console.log('You drive the car.')
+    },
+    brake: function(){
+        console.log('You have stopped the car')
+    }
+}
+
+this.name = 'My Cool Window';//Directly interacting with property of the window
+
+console.log(this.name);//Will refer to all the properties of the window
