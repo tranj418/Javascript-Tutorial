@@ -1,0 +1,35 @@
+//Constructor is a special method of a class
+//Accepts arguments and assign properties
+
+
+class Student{
+    constructor(name, age, gpa){
+        this.name = name;
+        this.age = age;
+        this.gpa = gpa;
+    }
+
+    study(){
+        console.log(`${this.name} is studying`);
+    }
+}
+
+//Since there is a constructor
+//In addition there are three parameters, they will need to be specified
+//In initial object creation
+const student1 = new Student('Jim Tran', 22, 3.7);
+
+console.log(`This student's age is ${student1.age}`);
+console.log(`This student's gpa is ${student1.gpa}`);
+console.log(`This student's name is ${student1.name}`);
+student1.study();
+
+
+const student2 = new Student('Jamal Cooley', 23, 3.82);
+
+console.log(`This student's age is ${student2.age}`);
+console.log(`This student's gpa is ${student2.gpa}`);
+console.log(`This student's name is ${student2.name}`);
+student2.study();
+
+
