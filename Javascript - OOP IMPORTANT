@@ -1,0 +1,43 @@
+//OOP
+//A group of properties and methods
+//Properties = attributes of an object
+//Methods = what an object can do
+//Use the period (.) to access properties/methods
+
+
+const car = {
+    model:'Camry',//Properties
+    color:'blue',
+    year:2023,
+
+    drive: function(){//Methods
+        console.log('You drive the car.')
+    },
+    brake: function(){
+        console.log('You have stopped the car')
+    }
+}
+
+const car2 = {
+    model:'Compass',//Properties
+    color:'White',
+    year:2024,
+
+    drive: function(){//Methods
+        console.log('You drive the car.')
+    },
+    brake: function(){
+        console.log('You have stopped the car')
+    }
+}
+
+
+console.log(car.color);//Accessing properties for car 1
+console.log(car.model);
+console.log(car.year);
+
+car.brake();//Accessing the method associated with the object
+
+console.log(car2.color);//Accessing properties for car 1
+console.log(car2.model);
+console.log(car2.year);
