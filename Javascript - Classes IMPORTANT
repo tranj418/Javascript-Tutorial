@@ -1,0 +1,31 @@
+//Classes = A blueprint for creating objects
+//Defines what properties and methods they  have
+//Use a constructor for unique properties
+
+
+class Player{
+    score = 0;
+
+    pause(){//With methods in classes you do NOT need the word function
+        console.log('You paused the game.')
+    }
+
+    exit(){
+        console.log('You have exited the game.')
+    }
+}
+
+//to utilize the class
+//Instance of an object created using the class
+//Syntax below
+const player1 = new Player();//do NOT use the . operator with the class
+
+console.log(player1.score);
+player1.score += 5;
+console.log(player1.score);
+
+player1.pause();
+player1.exit();
+
+const player2 = new Player();
+player2.pause();
