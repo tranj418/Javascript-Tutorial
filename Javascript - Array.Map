@@ -1,0 +1,23 @@
+//array.map = executes a provided callback function
+//once for each array element
+// AND crates a new array
+
+let numbers = [1, 2, 3, 4, 5];
+
+let squareNums = numbers.map(square);
+squareNums.forEach(print);
+
+let cubednums = numbers.map(cubed);
+cubednums.forEach(print);
+
+function square(element){
+    return Math.pow(element, 2);
+}
+
+function print(element){
+    console.log(element);
+}
+
+function cubed(element){
+    return Math.pow(element, 3);
+}
