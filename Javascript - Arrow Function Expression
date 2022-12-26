@@ -1,0 +1,27 @@
+//Arrow function expression
+//Alternative to a traditional function
+
+/*
+const greeting = function(username){
+    console.log(`Hello ${username}`)
+}
+*/
+
+//Alternative to the above code listed below
+//const greeting = (username) => console.log(`Hello ${username}`);
+
+//greeting('Ben');
+
+/*With more than 1 parameter specified
+const calcPerc = (num, num2) => (num / num2) * 100
+console.log(`${calcPerc(25, 100)}%`);
+*/
+
+let grades = [98, 100, 86, 82, 94];
+
+grades.sort((x, y) => x - y); //Simpler way of using function exp for array sorting
+grades.sort((x, y) => y - x);
+
+grades.forEach(function(element){
+    console.log(element);
+});
