@@ -1,0 +1,17 @@
+//Utilizing the callback function with a foreach loop in an array
+
+let students = ['patrick', 'spongebob', 'sandy'];
+
+students.forEach(capitalize);
+students.forEach(print);
+
+function capitalize(element, index, array){//Not all three params need to be specified
+
+    array[index] = element[0].toUpperCase() + element.substring(1);
+    //Will select first char of every string
+
+}
+
+function print(element){
+    console.log(element);
+}
