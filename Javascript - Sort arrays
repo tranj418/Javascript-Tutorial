@@ -1,0 +1,22 @@
+ //Sorting array
+
+let grades = [85, 89, 84, 92];
+
+grades = grades.sort(descendingSort);
+grades.forEach(print)
+console.log(' ')
+grades = grades.sort(ascendingSort);
+grades.forEach(print)
+
+function descendingSort(x, y){
+    return y - x;
+}
+
+function ascendingSort(x, y){
+    return x - y;
+}
+
+
+function print(element){
+    console.log(element);
+}
