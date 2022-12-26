@@ -1,0 +1,20 @@
+//shuffling Array
+
+let cards = ['A', 'J', '2', '5', 'Q', 'K'];
+shuffle(cards);
+
+//console.log(cards);
+cards.forEach(card => console.log(card));
+
+function shuffle(array){
+    let currentInd = array.length;
+
+    while(currentInd != 0){
+        let randomInd = Math.floor(Math.random() * array.length);
+        currentInd -= 1;
+
+        let temp = array[currentInd];
+        array[currentInd] = array[randomInd];
+        array[randomInd] = temp;
+    }
+}
