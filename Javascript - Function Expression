@@ -1,0 +1,22 @@
+//function expression
+//A function without a name, aka anonymous function
+
+
+const greeting = function(){//Only difference is that you are NOT assigning a function name
+    console.log('Hello World');
+}
+
+greeting();//Invoking the function
+
+
+let count = 0;
+
+document.getElementById('addBtn').onclick = function(){
+    count += 1;
+    document.getElementById('myLabel').innerHTML = count;
+}
+
+document.getElementById('subBtn').onclick = function(){
+    count -= 1;
+    document.getElementById('myLabel').innerHTML = count;
+}
