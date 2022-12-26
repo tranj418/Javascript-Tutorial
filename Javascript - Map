@@ -1,0 +1,23 @@
+//Map an object that holds key value pairs of any data types
+
+const store = new Map([
+    ['t-shirt', 20],
+    ['jeans', 28],
+    ['flannel', 32],
+    ['socks', 12]
+]);
+
+let shoppingCart = 0;
+
+//shoppingCart += store.get('t-shirt');//Get method grabs the value of the specified Key
+//shoppingCart += store.get('flannel');
+//console.log(shoppingCart);
+
+store.set('Coat', 45);//Adds an key-value pair to the map
+store.delete('Coat');//If it detects the element in the map then remove it
+console.log(store.has('flannel'));//Will return T/F if item is in MAP
+console.log(store.size);//Indicates how many items are in a map
+
+
+//Print out Key value pairs
+store.forEach((value, key) => console.log(`${key} ${value}$`))
