@@ -1,0 +1,19 @@
+//Nested Function
+let username = 'Jim Tran';
+let userInbox = 0;
+
+login();
+
+function login(){
+    displayUserName();
+    displayInbox();
+
+    function displayUserName(){
+        console.log(`Welcome ${username}`);
+    }
+
+    function displayInbox(){
+        console.log(`You have ${userInbox} new messages.`);
+    }
+}
+
