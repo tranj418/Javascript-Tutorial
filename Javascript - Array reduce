@@ -1,0 +1,11 @@
+//array.reduce() = reduces an array to a single value
+
+let prices = [18, 60, 25, 32, 29];
+let total = prices.reduce(checkout);
+
+function checkout(total, element){//Element = current element they are working with
+    return total + element;
+}
+
+console.log(`The total amount is ${total} dollars.`)
+
