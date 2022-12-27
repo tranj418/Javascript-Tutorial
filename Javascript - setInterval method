@@ -1,0 +1,18 @@
+//setInterval() = invokes function repeatedly after miliseconds
+//Asynchronous  function, does NOT stop execution of code
+
+
+let count = 0;
+let max = window.prompt('Enter a number');
+
+max = Number(max);
+
+const myTimer = setInterval(countUp, 1000);
+
+function countUp(){
+    count += 1;
+    console.log(count);//Will write out the numbers after ea second specified
+    if(count >= max){
+        clearInterval(myTimer);
+    }
+}
