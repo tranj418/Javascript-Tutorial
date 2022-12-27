@@ -1,0 +1,14 @@
+//time() = starts a timer you can use to track how long an operation takes
+
+//start
+console.time('Response time');
+
+//alert('click okay button')
+
+//Asynchronous method, the timer will NOT wait for it to finish
+//ONLY for SYNCHRONOUS methods
+setTimeout(() => console.log('Hello'), 3000);
+
+
+//end
+console.timeEnd('Response time');
