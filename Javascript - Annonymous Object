@@ -1,0 +1,48 @@
+//Annoynymous Objects = objects with  no names
+//Require less syntax, no need for unique names
+//con do NOT have direct access to object
+
+class Card{
+    constructor(value, suit){
+        this.value = value;
+        this.suit = suit;
+    }
+}
+
+/*
+let card1 = new Card('A', 'Hearts');
+let card2 = new Card('A', 'Diamonds');
+let card3 = new Card('A', 'Spades');
+let card4 = new Card('A', 'Clubs');
+let card5 = new Card('K', 'Hearts');
+let card6 = new Card('Q', 'Diamonds');
+let cards = [card1, card2, card3, card4, card5, card6];
+*/
+
+//console.log(card1.value + card1.suit);
+//console.log(cards[0].value + cards[0].suit);
+
+
+//Annonymous Objects
+
+new Card('A', 'Hearts');
+new Card('A', 'Diamonds');
+new Card('A', 'Spades');
+new Card('A', 'Clubs');
+new Card('K', 'Hearts');
+new Card('Q', 'Diamonds');
+
+let cards = [new Card('A', 'Hearts'), 
+            new Card('A', 'Diamonds'), 
+            new Card('A', 'Spades'), 
+            new Card('A', 'Clubs'), 
+            new Card('K', 'Hearts'), 
+            new Card('Q', 'Diamonds')];
+
+//console.log(card1.value + card1.suit);//trying to directly access it now, you will get a referenceError 
+
+//to access the annon object, utilize the array index location
+console.log(cards[0].value + cards[0].suit);
+
+cards.forEach(card => console.log(`${card.value} ${card.suit}`));
+
