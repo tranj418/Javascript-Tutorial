@@ -1,0 +1,37 @@
+//static = belongs to the class, NOT the objects
+// properties: useful for caches, fixed-configuration
+// Methods: useful for utility functions
+
+
+
+class Car{
+
+    static numofCars = 0;//Static keyword is NEEDED in beginning
+
+    constructor(model, make){
+        this.model = model;
+        this.make = make
+        //this.numofCars += 1;//If you use THIS then it focuses on the object
+        Car.numofCars +=1;
+    }
+
+    static startRace(){//Making a static method
+        console.log('3...2...1');
+    }
+}
+
+const car1 = new Car('Porshe', 'Panamera');
+const car2 = new Car('Mercedes', '400');
+const car3 = new Car('Lexus', 'RX-300');
+const car4 = new Car('GMC', 'Terrain');
+
+
+console.log(Car.numofCars);//Accessing the static property
+
+Car.startRace();//This allows you to access the static method with the CLASS
+
+
+//example of a static method in a class
+//Math = CLASS
+// .round() is the static method
+Math.round();
