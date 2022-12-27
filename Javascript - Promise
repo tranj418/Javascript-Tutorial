@@ -1,0 +1,38 @@
+ //promise = object that encapsulate the result of an async operation
+//lets async methods return values like sync methods
+
+
+//The state is 'pending' then: 'fulfilled' or 'rejected'
+//The result is what can be returned
+//2 parts producing and consuming
+
+
+
+const promise = new Promise((resolved, reject) => {
+    let fileLoaded = false;
+
+    //let fileLoaded = false;
+    //If false then will receive uncaught in promise error
+    //UNLESS you have a catch exception below ln 30
+
+    if(fileLoaded){
+        resolved('File Loaded');
+    }
+    else{
+        reject('File not loaded');
+    }
+
+});
+
+
+
+promise.then(value => console.log(value))
+        .catch(error => console.log(error));
+
+
+const waitTime = time => new Promise(resolve => {
+    setTimeout(resolve, time);
+    
+})
+
+waitTime(2000).then(() => console.log('Thanks for waiting.'));
