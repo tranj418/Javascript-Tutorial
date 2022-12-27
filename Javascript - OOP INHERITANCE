@@ -1,0 +1,53 @@
+//Inheritance = a child class can inherit all the methods and prop from another class
+
+//Parent class
+class Animal{
+    alive = true;
+
+    eat(){
+        console.log(`This ${this.name} is eating`);
+    }
+
+    sleep(){
+        console.log(`This ${this.name} is sleeping`);
+    }
+}
+
+class Rabbit extends Animal{// Syntax add extends and (parent class name) 
+    name = 'Rabbit';
+
+    run(){
+        console.log(`This ${this.name} is running`);
+    }
+}
+
+
+class Fish extends Animal{
+    name = 'Fish';
+
+    swim(){
+        console.log(`This ${this.name} is swimming`);
+    }    
+}
+
+
+class Hawk extends Animal{
+    name = 'Hawk';
+
+    fly(){
+        console.log(`This ${this.name} is flying`);
+    }    
+}
+
+
+const rabbit1 = new Rabbit();
+rabbit1.eat();
+rabbit1.sleep();
+console.log(rabbit1.alive);//Accessing the property from the parent class
+
+
+const hawk1 = new Hawk();
+hawk1.fly();
+//If you try and access the Rabbit classes' running method it will NOT appear
+
+
