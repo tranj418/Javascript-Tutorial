@@ -1,0 +1,45 @@
+//get = binds an object property to a function
+// when that property is accessed
+
+//set = binds an object property to a function
+// when that property is assigned a value
+
+class Car{
+    constructor(power){
+        this._gas = 25;
+        this._power = power;//Common sol is to just prefix it with an _ or something to indiciate that it is protected
+    }
+
+    get power(){//When getting this property perform this function
+
+        //return this.power //If you call the property you will get a Type error
+        //Because the get has the same property name as what is specified in constructor
+
+        //Correct way
+        return `${this._power} hp`;
+    }
+
+    get gas(){
+        return `${this._gas}L (${this._gas / 50 * 100}%)`;
+    }
+
+    set gas(value){
+        if(value > 50){
+            value = 50
+        }
+        else if(value < 0){
+            value = 0
+        }
+        this._gas = value;
+    }
+}
+
+let car = new Car(350, 52);
+
+//car.power = 1000;// will NOT change the property 
+car._power = 1000;//Will change it, but the _ indicates that it is a protected property
+car.gas = 50// The setter above keeps the property from going above a certain specified value
+
+
+console.log(car.power);
+console.log(car.gas)
