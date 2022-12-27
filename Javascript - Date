@@ -1,0 +1,35 @@
+//Date object works with date and time
+ 
+
+let date = new Date();
+//let date = new Date(0);//Will display epic, date of 1969
+//Can pass other args in and it will show the time in MS from 1969
+//let date = new Date(2023, 0, 1, 2, 3, 4, 5);
+//let date = new Date('January 1, 2023');
+//let year = date.getFullYear();
+//let dayofMon = date.getDate();
+//let dayofWeek = date.getDay();
+//let hour = date.getHours();//Military time
+
+
+//date = date.toLocaleString();
+
+
+//date.setFullYear(2024);
+//date.setMonth(4);
+
+document.getElementById('myLabel').innerHTML = formatDate(date);
+
+/*
+document.getElementById('myBtn').onclick = function(){
+    document.getElementById('myLabel').innerHTML = futureYr;
+}*/
+
+
+function formatDate(date){
+    let yr = date.getFullYear();
+    let month = date.getMonth() + 1;
+    let day = date.getDate();
+
+    return `${month}/${day}/${yr}`
+}
