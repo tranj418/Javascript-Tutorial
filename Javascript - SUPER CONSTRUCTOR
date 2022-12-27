@@ -1,0 +1,38 @@
+//super = refers to parent class
+//commonly used to invoke constructor of a parent class
+
+class  Animal{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+}
+
+
+class Fish extends Animal{
+    constructor(name, age, swimSpeed){
+        super(name, age)
+        this.swimSpeed = swimSpeed;
+    }
+
+}
+
+
+class Wolf extends Animal{
+    constructor(name, age, runSpeed){
+        super(name, age)
+        this.runSpeed = runSpeed;
+    }
+}
+
+
+const wolf1 = new Wolf('Wolf', 1, 15);
+const fish1 = new Fish('Fish', 1, 6);
+
+console.log(wolf1.name);//Will receive an error about a constructor error
+console.log(wolf1.age);//Because in the class the constructors have the same
+console.log(wolf1.runSpeed);//UNLESS you specify super in the child classes
+
+console.log(fish1.name);
+console.log(fish1.age);
+console.log(fish1.swimSpeed);
