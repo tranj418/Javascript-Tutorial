@@ -1,0 +1,17 @@
+//synchronous code = in sequence, linear instructions
+//Asynchronous code = out of sequence, start now, finish sometime later
+
+
+//synchronous
+
+console.log('Start')
+//console.lag('Start');//Will throw an error but also stop the REST of the code from executing
+console.log('This step is synchronous');
+console.log('End');
+
+
+
+//Asynchronous
+console.log('Start')
+setTimeout(() => console.log('This is asynchronous'), 5000);//Executes outside of the sequential code
+console.log('End');//Does NOT need to wait for the setTimeout() to finish
