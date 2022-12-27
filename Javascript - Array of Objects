@@ -1,0 +1,35 @@
+class Car{
+    constructor(make, model, color){
+        this.make = make;
+        this.model = model;
+        this.color = color;
+    }
+
+
+    drive(){
+        console.log(`You are driving the ${this.model}.`)
+    }
+}
+
+const car1 = new Car('Porsche', 'Panamera', '2021');
+const car2 = new Car('Lexus', 'RX300', '2021');
+const car3 = new Car('Honda', 'Accord', '2022');
+const car4 = new Car('Toyota', 'Rav', '2022');
+
+const cars = [car1, car2, car3, car4];
+
+console.log(cars[0].model);// cars = array
+console.log(cars[0].make);//specify index number in array
+console.log(cars[0].color);// the "." to indicate what property
+
+cars[0].drive();//To access the item in the array, the class method
+
+
+
+function startRace(cars){
+    for(const car of cars){
+        car.drive();//Invoking the class method for each item in the array
+    }
+}
+
+startRace(cars);
